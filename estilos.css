@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --g-titulo: 400;
+    --g-texto: 300;
+    --texto: 'M PLUS 1 Code', sans-serif;
+    --titulo: 'Yanone Kaffeesatz', sans-serif;
+    --bg-primario: #121212;
+    --bg-secundario: #fff;
+    --bg-terciario: #e91e63;
+    --fz-titulo: 2rem;
+    --fz-2: 1.8rem;
+    --fz-3: 1.5rem;
+    --fz-4: 1.2rem;
+    --transition: 0.7s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* =========MENU NAVEGACION======== */
+
+.navegacion{
+    width: 100%;
+    background: var(--bg-primario);
+    position: fixed;
+    font-family: var(--titulo);
+}
+
+.navegacion .menu-navegacion{
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    color: var(--bg-secundario);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-navegacion a h2{
+    display: flex;
+    align-items: center;
+}
+
+.menu-navegacion img{
+    width: 50px;
+}
+
+.menu-navegacion a,ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    font-size: var(--fz-2);
+    color: var(--bg-secundario);
+    display: flex;
+}
+
+.menu-navegacion ul, #login{
+    font-weight: var(--g-texto);
+    gap: 20px;
+}
+
+.menu-navegacion nav ul a:hover{
+    transition: var(--transition);
+    box-shadow: 0 2px #e91e63 ;
+}
+
+.menu-navegacion #login img{
+    background: var(--bg-terciario);
+    border-radius: 7px;
+    padding: 0.25rem;
+    transition: var(--transition);
+    width: 40px;
+}
+
+.menu-navegacion #login img:hover{
+    background: #e91e40;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+}
+
+/* =======MAIN======== */
+
+main{
+    /* background-color: var(--bg-primario); */
+    color: var(--bg-secundario);
+    font-size: var(--fz-3);
+}
+
+main .presentacion{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: 2s;
+}
+
+main .presentacion1{
+    background: var(--bg-primario);
+}
+
+main .presentacion2{
+    background: var(--bg-secundario);
+}
+
+main .presentacion3{
+    background: var(--bg-primario);
+}
+
+main .presentacion4{
+    background: var(--bg-secundario);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .navegacion .menu-navegacion{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: #e91e63; */
+    }
+    
+    .menu-navegacion #logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-navegacion ul li a{
+        padding: 15px 0px 0px;
+        font-size: var(--fz-3);
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .navegacion .menu-navegacion{
+        display: flex;
+        width: 100%;
+        padding: 10px 0px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* background-color: #e91e63; */
+    }
+    
+    .menu-navegacion ul{
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        height: 0px;
+        transition: var(--transition);
+    }
+
+    .menu-navegacion ul:hover{
+        background: var(--bg-primario);
+        height: 160px;
+        opacity: 1;
+    }
+
+    .menu-navegacion ul li a{
+        padding: 15px 0px 0px;
+        font-size: var(--fz-3);
+    }
+
+    .menu-navegacion #login{
+        display: none;
+    }
+    
+}
