@@ -71,15 +71,18 @@ html{
     box-shadow: 0 2px #e91e63 ;
 }
 
-.menu-navegacion #login img{
+.menu-navegacion #login{
     background: var(--bg-terciario);
     border-radius: 7px;
     padding: 0.25rem;
     transition: var(--transition);
-    width: 40px;
 }
 
-.menu-navegacion #login img:hover{
+.menu-navegacion #login img{
+    width: 30px;
+}
+
+.menu-navegacion #login:hover{
     background: #e91e40;
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
@@ -115,28 +118,9 @@ main .presentacion4{
     background: var(--bg-secundario);
 }
 
-@media screen and (max-width: 1200px) {
+/* CABECERA */
 
-    .navegacion .menu-navegacion{
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        /* background-color: #e91e63; */
-    }
-    
-    .menu-navegacion #logo{
-        display: flex;
-        align-items: center;
-    }
-
-    .menu-navegacion ul li a{
-        padding: 15px 0px 0px;
-        font-size: var(--fz-3);
-    }
-    
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 
     .navegacion .menu-navegacion{
         display: flex;
@@ -148,6 +132,10 @@ main .presentacion4{
         /* background-color: #e91e63; */
     }
     
+    .menu-navegacion #logo img{
+        display: none;
+    }
+
     .menu-navegacion ul{
         opacity: 0;
         flex-direction: column;
@@ -169,7 +157,8 @@ main .presentacion4{
     }
 
     .menu-navegacion #login{
-        display: none;
+
     }
     
 }
+/* CUERPO */
