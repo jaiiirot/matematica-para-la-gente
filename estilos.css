@@ -118,9 +118,10 @@ main .presentacion4{
     background: var(--bg-secundario);
 }
 
+
 /* CABECERA */
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px){
 
     .navegacion .menu-navegacion{
         display: flex;
@@ -133,7 +134,7 @@ main .presentacion4{
     }
     
     .menu-navegacion #logo img{
-        display: none;
+        /* display: none; */
     }
 
     .menu-navegacion ul{
@@ -158,6 +159,10 @@ main .presentacion4{
 
     .menu-navegacion #login{
 
+    }
+
+    main .presentacion1{
+        background: var(--bg-terciario) !important;
     }
     
 }
