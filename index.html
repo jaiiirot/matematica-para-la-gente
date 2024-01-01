@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="img/icons8-pluma-96.png" type="image/x-icon">
-    <title>Pluuma</title>
+    <link rel="shortcut icon" href="./assets/image/moon.png" type="image/x-icon">
+    <title>Dark</title>
+
+    <!-- Style Local -->
+    <link rel="stylesheet" href="style/main.css">
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&family=Poppins:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons fontawesome -->
+    <script src="https://kit.fontawesome.com/de8fe1cee1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="navegacion">
-        <div class="menu-navegacion">
-            <a href="#" id="logo"><img src="img/icons8-pluma-96.png" alt=""><h2>PLUUMA</h2></a>    
-            <nav>
-                <ul>
-                    <li><a href="#seccion1">Inicio</a></li>
-                    <li><a href="#seccion2">Nosotros</a></li>
-                    <li><a href="#seccion3">Preguntas Frecuentas</a></li>
-                    <li><a href="#seccion4">Redes Sociales</a></li>
-                </ul>
-            </nav>
-            <a href="campus/login.html" id="login"><img src="img/login.png" alt="">iniciar sesion</a>
-        </div>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__navLogo logo">
+                <img class="logo__darkImg" src="./assets/image/moon.png" alt="" srcset="">
+                <span class="logo__darkText">Dark</span>
+            </div>
+            <form class="header__navSearch">
+                <input type="search" name="" id=""><button class="btn" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="header__navOptions">
+                <li class="btn btn-none"><i class="fa-solid fa-heart"></i></li>
+                <li class="btn btn-none"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="btn btn-content">Iniciar Sesion</li>
+            </ul>
+        </nav>
+        <ul class="header__products">
+            <li>Inicio</li>
+            <li>Remeras</li>
+            <li>Pantalones</li>
+            <li>Zapatillas</li>
+        </ul>
     </header>
+
     <main>
-        <div class="cuerpo-general">
-            <section class="presentacion presentacion1" id="seccion1">
-                <p>soy 1</p>
-            </section>
-            <section class="presentacion presentacion2" id="seccion2">
-                <p>soy 2</p>
-            </section>
-            <section class="presentacion presentacion3" id="seccion3">
-                <p>soy 3</p>
-            </section>
-            <section class="presentacion presentacion4" id="seccion4">
-                <p>soy 4</p>
-            </section>
-        </div>
+
     </main>
+
     <footer>
 
     </footer>
+
+    <script type="module" src=""></script>
 </body>
+
 </html>

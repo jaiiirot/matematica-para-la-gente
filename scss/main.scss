@@ -1,0 +1,58 @@
+$font-title: "Poppins";
+$font-text: "Mulish";
+
+$blanco: #fff;
+$rojorosa: #ff1a46;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-text;
+  list-style: none;
+}
+
+body {
+  background: #f0eaea;
+}
+
+* .logo {
+  user-select: none;
+  $h-logo: 3rem;
+  height: $h-logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__darkImg {
+    pointer-events: none;
+    height: inherit;
+  }
+  &__darkText {
+    user-select: none;
+    font-size: calc($h-logo - 1rem);
+    font-family: $font-title;
+    font-weight: 600;
+  }
+}
+
+* .btn {
+  transition: 50ms ease-in-out;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    transform: translate(1px, 1px);
+  }
+}
+
+* .btn-content {
+  font-weight: 600;
+  border: 1px solid #000;
+}
+
+/* Header */
+@import "./header";
+/* main */
+@import "./body";
