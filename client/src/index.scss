@@ -19,22 +19,22 @@ body {
   position: absolute;
   z-index: -10;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   filter: blur(150px);
-  .circle {
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    &01{
-      transform: translate(75%, -50%);
-    }
-    &02{
-      transform: translate(40%, -50%);
-    }
-    &03{
-      transform: translate(90%, -50%);
-    }
+  opacity: 0.4;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.textura {
+  position: fixed;
+  z-index: -9;
+  opacity: 0.8;
+  mix-blend-mode: soft-light;
+  width: 100%;
+  // height: 100%;
+  svg {
+    width: 100%;
+    height: 100dvh;
   }
 }

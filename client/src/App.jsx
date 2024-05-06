@@ -5,30 +5,46 @@ function App() {
   return (
     <BackgroundFilter>
       <MyRoutes />
+      <Spinner />
     </BackgroundFilter>
   );
 }
 
 export default App;
 
+import fondo from "./assets/img/fondo.jpg";
 const BackgroundFilter = (porps) => {
   return (
     <>
       <div className="containerCircles">
-        <span
-          className="circle circle01"
-          style={{ backgroundColor: "#00f7ff" }}
-        ></span>
-        <span
-          className="circle circle02"
-          style={{ backgroundColor: "#7a00b0" }}
-        ></span>
-        <span
-          className="circle circle03"
-          style={{ backgroundColor: "#0000ff" }}
-        ></span> 
+        <img src={fondo} alt="" />
+      </div>
+      <div className="textura">
+        <svg>
+          <filter id="pedroduarteisalegend">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.80"
+              numOctaves="4"
+              stitchTiles="stitch"
+            ></feTurbulence>
+          </filter>
+          <rect
+            width="100%"
+            height="100%"
+            filter="url(#pedroduarteisalegend)"
+          ></rect>
+        </svg>
       </div>
       <div className="bodyFilter">{porps.children}</div>
     </>
+  );
+};
+import stiledSpinner from "./components/Spinner.module.scss";
+const Spinner = () => {
+  return (
+    <div>
+      <div className={stiledSpinner.shapes}></div>
+    </div>
   );
 };
