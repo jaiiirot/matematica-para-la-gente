@@ -1,0 +1,11 @@
+{
+  "name": "matematicaelemental",
+  "version": "1.0.0",
+  "description": "\"matematica elemental\" es una web para el aprendizaje para matemáticas ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
