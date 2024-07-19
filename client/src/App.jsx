@@ -16,9 +16,9 @@ import fondo from "./assets/img/fondo.jpg";
 const BackgroundFilter = (porps) => {
   return (
     <>
-      <div className="containerCircles">
+      {/* <div className="containerCircles">
         <img src={fondo} alt="" />
-      </div>
+      </div> */}
       <div className="textura">
         <svg>
           <filter id="pedroduarteisalegend">
