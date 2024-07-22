@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Cours, CoursStatus } from './cours.entity';
+import { Cours, CoursStatus } from './entities/cours.entity';
 import { v4 as uuid } from 'uuid';
 import { UpdateCoursDto } from './dto/cours.dto';
 @Injectable()

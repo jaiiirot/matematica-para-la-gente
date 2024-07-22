@@ -1,4 +1,4 @@
-import { CoursStatus } from '../cours.entity';
+import { CoursStatus } from '../entities/cours.entity';
 import {
   IsIn,
   IsNotEmpty,
