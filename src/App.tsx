@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ReactPlayerVideo from "./components/ReactPlayerVideo";
+import PrivateGuard from "./guard/PrivateGuard";
+import Layout from "./Layout/Layout";
+import LayoutCource from "./Layout/LayoutCource";
+import Course from "./pages/Course";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/curso/:urltitle" element={<LayoutCource />}>
+          <Route index element={<Course />} />
+          <Route path=":url" element={<ReactPlayerVideo />} />
+        </Route>
+        <Route path="/canal" element={<h1>Sobre</h1>} />
+
+        <Route element={<PrivateGuard />}>
+          <Route path="/guardados" element={<h1>guardados</h1>} />
+          <Route path="/user" element={<h1>user</h1>} />
+        </Route>
+        <Route path="*" element={<h1>404</h1>} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
