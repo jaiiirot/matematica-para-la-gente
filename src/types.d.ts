@@ -16,17 +16,13 @@ export interface TypeCourse {
   description: string;
 }
 
-export interface TypeCanal {
+export interface TypeCreator {
+  id: string;
   avatar: string;
   name: string;
-  plataform: string;
-}
-
-export interface TypeCardCourse {
-  id: number;
-  front: string;
-  title: string;
   description: string;
-  canal: TypeCanal;
-  class: TypeClass[];
+  platform: string[];
+  history: string;
+  achievements: string[];
+  contributions: string;
 }

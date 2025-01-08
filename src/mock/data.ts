@@ -6,6 +6,7 @@ interface Course {
   urltitle: string;
   description: string;
   canal: {
+    id: string;
     avatar: string;
     name: string;
     plataform: string;
@@ -26,6 +27,7 @@ export const course: Course[] = [
     urltitle: "matematica-desde-cero",
     description: "conceptos de matemática desde cero.",
     canal: {
+      id: "1dsd1233",
       avatar:
         "https://yt3.ggpht.com/e6MSYBYMhAblq2tflgxLUBYR9PI_2oZXOqCOq3qlwOcvUyHcpRByyQ7_hRQ1L4kMONBF26aQXmg=s48-c-k-c0x00ffffff-no-rj",
       name: "El traductor de Ingeniería",
@@ -77,6 +79,7 @@ export const course: Course[] = [
     description:
       "Curso sobre las secciones de un cono: identificar, graficar, rotarlas y todo lo que necesitas aprender!",
     canal: {
+      id: "1dsd1232",
       avatar:
         "https://yt3.ggpht.com/mutEfGrV7OtsLdZC9m56h9_RNDzEqm2anCh1JvtFfE53-tTyRIxB7UAZSs8CAUxfBIr_PPLqYU4=s48-c-k-c0x00ffffff-no-rj",
       name: "Álgebra Para Todos",
@@ -165,6 +168,7 @@ export const course: Course[] = [
     urltitle: "potencias",
     description: "Propiedades, ecuaciones, ejercicios resueltos.",
     canal: {
+      id: "1dsd12332",
       avatar:
         "https://yt3.ggpht.com/mutEfGrV7OtsLdZC9m56h9_RNDzEqm2anCh1JvtFfE53-tTyRIxB7UAZSs8CAUxfBIr_PPLqYU4=s48-c-k-c0x00ffffff-no-rj",
       name: "Álgebra Para Todos",
@@ -291,6 +295,7 @@ export const course: Course[] = [
     description:
       "Curso profesional de programación C++ desde cero - En este curso aprenderás a programar y construir tus programas utilizando el lenguaje de programación C++. C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C y añadir mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.",
     canal: {
+      id: "1dsd12323",
       avatar:
         "https://yt3.ggpht.com/0wKflpV0DaoxzPpYO7qqmu8adavadBHZDpoIRElzwUdsswAmJ0Zk-jI0IrEzisA_48L0PlrGDQ=s48-c-k-c0x00ffffff-no-rj",
       name: "Aprende a Programar",
@@ -668,6 +673,7 @@ export const course: Course[] = [
     urltitle: "linux-desde-cero",
     description: "Playlist",
     canal: {
+      id: "sad1212d21",
       avatar:
         "https://yt3.ggpht.com/ytc/AIdro_lywghW3Dq5li8ze84NvEuguvEmN0I5Xi0VI5CC8QoyPg=s48-c-k-c0x00ffffff-no-rj",
       name: "de Facultad Autodidacta",
