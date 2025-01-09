@@ -9,7 +9,7 @@ export default function CardCreators({ id }: { id: string }) {
     creator;
 
   return (
-    <>
+    <div>
       <div className="text-center">
         <img
           src={avatar}
@@ -35,6 +35,6 @@ export default function CardCreators({ id }: { id: string }) {
         <h2 className="text-lg font-semibold text-gray-800">Contribuciones</h2>
         <p className="text-gray-700">{contributions}</p>
       </div>
-    </>
+    </div>
   );
 }

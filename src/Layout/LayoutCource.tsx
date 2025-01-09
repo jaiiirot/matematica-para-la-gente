@@ -8,17 +8,13 @@ export default function LayoutCource() {
 
   return (
     <>
-      <section className="flex gap-4 my-4">
-        <div className="w-6/12 flex flex-col gap-2">
+      <section className="flex gap-2 mt-20 mb-4 w-10/12">
+        <div className="w-full flex flex-col gap-2">
           <Outlet />
         </div>
-        <div className="w-6/12 flex flex-col gap-2 p-2" >
-          <div>
-            <CardVideosCourse data={course[0]} urltitle={urltitle || ""} />
-          </div>
-          <div>
-            <CardCreators id={course[0].canal.id}/>
-          </div>
+        <div className="w-min flex flex-col gap-2">
+          <CardVideosCourse data={course[1]} urltitle={urltitle || ""} />
+          <CardCreators id={course[1].canal.id} />
         </div>
       </section>
     </>

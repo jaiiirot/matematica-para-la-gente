@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main className="w-10/12 m-auto">
+      <main  className="flex flex-col items-center gap-4">
         <Outlet />
       </main>
     </>

@@ -28,10 +28,24 @@ export default function CardCourse({
         alt={description}
       />
       <div className="flex flex-col h-full justify-between p-3 gap-2 pointer-events-none">
-        <span className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1">
           <h2 className="font-bold text-sm line-clamp-1">{title}</h2>
           <p className="text-xs text-gray-600 line-clamp-2">{description}</p>
-        </span>
+        </div>
+        <div className="flex items-center gap-1 text-xs">
+          <span className="p-1 rounded-md border border-red-500 bg-red-100">
+            matematica
+          </span>
+          <span className="p-1 rounded-md border border-blue-500 bg-blue-100">
+            algebra
+          </span>
+          <span className="p-1 rounded-md border border-green-500 bg-green-100">
+            fisica
+          </span>
+          <span className="p-1 rounded-md border border-violet-500 bg-violet-100">
+            quimica
+          </span>
+        </div>
         <div className="flex justify-between items-center gap-1">
           <div className="flex items-center text-[10px]">
             <img
@@ -40,11 +54,12 @@ export default function CardCourse({
               className="rounded-full size-5"
             />
             <p>
+               
               <span className="text-gray-600"> de </span>
               {canal.name}
             </p>
           </div>
-          <div>
+          <div>   
             <Youtube h="12" />
           </div>
         </div>

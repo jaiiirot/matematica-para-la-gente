@@ -1,7 +1,7 @@
-import ReactPlayerVideo from "./components/ReactPlayerVideo";
 import PrivateGuard from "./guard/PrivateGuard";
 import Layout from "./Layout/Layout";
 import LayoutCource from "./Layout/LayoutCource";
+import ContentCource from "./pages/ContentCource";
 import Course from "./pages/Course";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
@@ -13,7 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/curso/:urltitle" element={<LayoutCource />}>
           <Route index element={<Course />} />
-          <Route path=":url" element={<ReactPlayerVideo />} />
+          <Route path=":url" element={<ContentCource />} />
         </Route>
         <Route path="/canal" element={<h1>Sobre</h1>} />
 

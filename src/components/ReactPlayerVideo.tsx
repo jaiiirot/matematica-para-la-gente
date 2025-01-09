@@ -1,18 +1,29 @@
-import ReactPlayer from "react-player/lazy";
-import { useParams } from "react-router-dom";
+interface Props {
+  url: string;
+  play: boolean;
+  controls: boolean;
+  muted: boolean;
+}
 
-export default function ReactPlayerVideo() {
-  const { url } = useParams();
+import ReactPlayer from "react-player/lazy";
+
+export default function ReactPlayerVideo({
+  url = "",
+  play = true,
+  controls = true,
+  muted = true,
+}: Props) {
   const LinkYoutube: string = `https://www.youtube.com/watch?v=${url}}`;
+
   return (
-    <div className="w-full overflow-hidden rounded-3xl">
-      <ReactPlayer
-        url={LinkYoutube}
-        controls={true}
-        playing={true}
-        className="w-full h-80 object-cover rounded-3xl"
-        width={"100%"}
-      />
-    </div>
+    <ReactPlayer
+      url={LinkYoutube}
+      controls={controls}
+      playing={play}
+      muted={muted}
+      className="object-cover"
+      width={"100%"}
+      height={"441px"}
+    />
   );
 }

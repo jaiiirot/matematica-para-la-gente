@@ -11,7 +11,7 @@ export default function Course() {
       <img
         src={course[querynumber].front}
         alt=""
-        className="w-full h-80 object-cover rounded-3xl"
+        className="w-full h-[430px] object-cover rounded-3xl"
       />
     </>
   );
