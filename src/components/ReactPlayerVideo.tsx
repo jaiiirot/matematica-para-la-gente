@@ -1,8 +1,9 @@
 interface Props {
   url: string;
-  play: boolean;
-  controls: boolean;
-  muted: boolean;
+  play?: boolean;
+  controls?: boolean;
+  muted?: boolean;
+  loop?: boolean;
 }
 
 import ReactPlayer from "react-player/lazy";
@@ -12,6 +13,7 @@ export default function ReactPlayerVideo({
   play = true,
   controls = true,
   muted = true,
+  loop
 }: Props) {
   const LinkYoutube: string = `https://www.youtube.com/watch?v=${url}}`;
 
@@ -21,6 +23,7 @@ export default function ReactPlayerVideo({
       controls={controls}
       playing={play}
       muted={muted}
+      loop={loop}
       className="object-cover"
       width={"100%"}
       height={"441px"}

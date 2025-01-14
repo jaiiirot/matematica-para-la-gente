@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <section className="relative m-auto w-full h-80 overflow-hidden">
         <span className="absolute z-10 w-full h-full"></span>
-        <ReactPlayerVideo url="B1J6Ou4q8vE" controls={false} play muted/>
+        <ReactPlayerVideo url="B1J6Ou4q8vE" controls={false} loop={true}/>
       </section>
       <section className="w-10/12 m-auto">
         <h2 className="text-base font-bold">Categorias</h2>
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
       <section className="w-10/12 m-auto">
         <h2 className="text-base font-bold">Cursos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {course.map((item) => (
             <CardCourse
               key={item.id}

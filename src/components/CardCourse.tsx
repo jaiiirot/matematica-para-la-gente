@@ -53,13 +53,9 @@ export default function CardCourse({
               alt={`avatar de ${canal.name}`}
               className="rounded-full size-5"
             />
-            <p>
-               
-              <span className="text-gray-600"> de </span>
-              {canal.name}
-            </p>
+            <p> {canal.name}</p>
           </div>
-          <div>   
+          <div>
             <Youtube h="12" />
           </div>
         </div>

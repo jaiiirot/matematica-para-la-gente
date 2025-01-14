@@ -28,6 +28,7 @@ export default function CardVideosCourse({
   const styleActive: string =
     "p-2 hover:bg-[#0c233719] transition text-xs rounded-md font-medium flex items-center gap-2";
 
+    console.log(data);
   return (
     <div className="dark w-96 flex flex-col gap-2 border border-gray-200 rounded-3xl p-4">
       <div>

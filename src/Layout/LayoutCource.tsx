@@ -4,7 +4,8 @@ import CardCreators from "../components/CardCreators.tsx";
 import CardVideosCourse from "../components/CardVideosCourse.tsx";
 export default function LayoutCource() {
   const { urltitle } = useParams();
-  // const querynumber: number = parseInt(new URLSearchParams(window.location.search).get("class") || "0", 10) - 1;
+  // const querynumber: number =
+  //   parseInt(new URLSearchParams(window.location.search).get("class")) - 1;
 
   return (
     <>
@@ -13,8 +14,11 @@ export default function LayoutCource() {
           <Outlet />
         </div>
         <div className="w-min flex flex-col gap-2">
-          <CardVideosCourse data={course[1]} urltitle={urltitle || ""} />
-          <CardCreators id={course[1].canal.id} />
+          <CardVideosCourse
+            data={course[0]}
+            urltitle={urltitle || ""}
+          />
+          <CardCreators id={course[0].canal.id} />
         </div>
       </section>
     </>

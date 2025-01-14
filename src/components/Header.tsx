@@ -7,15 +7,15 @@ export default function Header() {
   useEffect(() => {
     const header = document.querySelector("header");
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 50) {
-        header?.classList.add("mt-2");   
-      } else {
-        header?.classList.remove("mt-2");
+      if (window.scrollY > 50) {
+        header?.classList.remove("mt-2"); 
+      }else{
+        header?.classList.add("mt-2");
       }
     });
   }, []);
   return (
-    <header className="flex fixed top-0 w-full z-50">
+    <header className="flex fixed top-0 w-full z-50 mt-2">
       <nav className="flex justify-between items-center gap-2 w-10/12 py-2 mx-auto px-4 bg-white rounded-xl h-16 shadow-sm">
         <Link to="/" className="hover:scale-95" >
           <Logo color="#0c2337" height="40" />
