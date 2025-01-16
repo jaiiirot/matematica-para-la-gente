@@ -1,4 +1,4 @@
-import { creators } from "../mock/creators";
+import { creators } from "../../mock/creators";
 
 export default function CardCreators({ id }: { id: string }) {
   const creator = creators.find((creator) => creator.id === id);

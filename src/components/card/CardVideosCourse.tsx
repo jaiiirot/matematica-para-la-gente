@@ -40,7 +40,7 @@ export default function CardVideosCourse({
           {data.class.map((item, i) => {
             return (
               <NavLink
-                to={`/curso/${urltitle}/${item.url}?num=${i+1}`}
+                to={`/cursos/${urltitle}/${item.url}&num=${i+1}`}
                 key={item.id}
                 className={({ isActive }) =>
                   isActive

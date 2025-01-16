@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import ReactPlayerVideo from "../components/ReactPlayerVideo";
+import ReactPlayerVideo from "../components/course/ReactPlayerVideo";
 
 export default function ContentCource() {
   const { url } = useParams();
+  console.log(url);
   return (
     <div>
       <ReactPlayerVideo

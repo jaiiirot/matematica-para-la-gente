@@ -1,19 +1,23 @@
+import { Route, Routes } from "react-router-dom";
 import PrivateGuard from "./guard/PrivateGuard";
 import Layout from "./Layout/Layout";
 import LayoutCource from "./Layout/LayoutCource";
 import ContentCource from "./pages/ContentCource";
+import PresentationCourse from "./pages/PresentationCourse";
 import Course from "./pages/Course";
 import Home from "./pages/Home";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/curso/:urltitle" element={<LayoutCource />}>
+        <Route path="/cursos">
           <Route index element={<Course />} />
-          <Route path=":url" element={<ContentCource />} />
+          <Route path=":urltitle" element={<LayoutCource />}>
+            <Route index element={<PresentationCourse />} />
+            <Route path=":url" element={<ContentCource />} />
+          </Route>
         </Route>
         <Route path="/canal" element={<h1>Sobre</h1>} />
 

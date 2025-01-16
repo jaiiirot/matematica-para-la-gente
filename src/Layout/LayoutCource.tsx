@@ -1,12 +1,12 @@
 import { Outlet, useParams } from "react-router-dom";
 import { course } from "../mock/data.ts";
-import CardCreators from "../components/CardCreators.tsx";
-import CardVideosCourse from "../components/CardVideosCourse.tsx";
+import CardCreators from "../components/card/CardCreators.tsx";
+import CardVideosCourse from "../components/card/CardVideosCourse.tsx";
 export default function LayoutCource() {
   const { urltitle } = useParams();
   // const querynumber: number =
   //   parseInt(new URLSearchParams(window.location.search).get("class")) - 1;
-
+  console.log(urltitle);
   return (
     <>
       <section className="flex gap-2 mt-20 mb-4 w-10/12">
