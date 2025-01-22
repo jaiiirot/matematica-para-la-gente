@@ -22,7 +22,7 @@ export const course: Course[] = [
   {
     id: 1,
     front:
-      "https://i.ytimg.com/vi/vMSrAcrH9tg/hqdefault.jpg?s…RUAAIhCGAE=&rs=AOn4CLBSXQrCWIxvy-zjhSBPmMeAqw7J7w",
+      "https://i.ytimg.com/vi/vMSrAcrH9tg/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBSXQrCWIxvy-zjhSBPmMeAqw7J7w",
     title: "Matemática desde cero (curso completo)",
     urltitle: "matematica-desde-cero",
     description: "conceptos de matemática desde cero.",

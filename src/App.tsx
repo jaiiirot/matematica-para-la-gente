@@ -6,6 +6,8 @@ import ContentCource from "./pages/ContentCource";
 import PresentationCourse from "./pages/PresentationCourse";
 import Course from "./pages/Course";
 import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Matter from "./pages/Matter";
 
 function App() {
   return (
@@ -19,13 +21,14 @@ function App() {
             <Route path=":url" element={<ContentCource />} />
           </Route>
         </Route>
-        <Route path="/canal" element={<h1>Sobre</h1>} />
+        <Route path="/materias" element={<Matter />} />
+        <Route path="/creadores" element={<h1>Sobre</h1>} />
 
         <Route element={<PrivateGuard />}>
           <Route path="/guardados" element={<h1>guardados</h1>} />
           <Route path="/user" element={<h1>user</h1>} />
         </Route>
-        <Route path="*" element={<h1>404</h1>} />
+        <Route path="*" element={<Error />} />
       </Route>
     </Routes>
   );

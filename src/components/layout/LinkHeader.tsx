@@ -8,21 +8,27 @@ interface Props {
 }
 
 export default function LinkHeader({ title, children, available }: Props) {
-  
-  const style: string = "rounded-md transition"
+  const style: string = "rounded-xl transition";
+  const link: string = title.toLowerCase();
   return (
-    <li className={`${available? "opacity-50" : "hover:scale-105 shadow-sm hover:shadow-lg"} ${style}`}>
+    <li
+      className={`${
+        available
+          ? "hover:scale-105 shadow-sm hover:shadow-xl"
+          : "text-gray-500"
+      } ${style}`}
+    >
       <Link
-        to="/cursos"
+        to={available ? `/${link}` : "#"}
         className="relative flex gap-2 justify-center items-center px-4 py-2 font-medium"
       >
         {children}
         {title}
-        {available ? (
-          <span className="text-xs font-extralight absolute -bottom-2 right-0 left-0 mx-auto w-min from-neutral-700">
+        {available ? null : (
+          <span className="text-xs absolute -bottom-2 right-0 left-0 mx-auto w-min">
             Proximamente
           </span>
-        ) : null}
+        )}
       </Link>
     </li>
   );

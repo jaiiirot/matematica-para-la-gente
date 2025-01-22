@@ -1,15 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import ActionCoffee from "../components/ActionCoffee";
 
 export default function Layout() {
   return (
     <>
       <Header />
-      <main className="relative flex flex-col items-center gap-4 bg-[#0c2337] bg-[url(/bg.svg)] bg-cover bg-center bg-repeat">
+      <main className="relative flex flex-col gap-4 mt-32">
         <Outlet />
       </main>
       <Footer />
+      <ActionCoffee />
     </>
   );
 }

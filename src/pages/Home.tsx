@@ -1,15 +1,48 @@
 // import GitHubStart from "../components/GitHubStart";
-// import CardCourse from "../components/card/CardCourse.tsx";
+import CardCourse from "../components/card/CardCourseCol.tsx";
 import ReactPlayerVideo from "../components/course/ReactPlayerVideo.tsx";
-// import { course } from "../mock/data.ts";
+import { course } from "../mock/data.ts";
 // import { TypeCardCourse} from "../types.js";
 
 export default function Home() {
   return (
     <>
-      <section className="relative m-auto w-full h-full overflow-hidden">
-        <span className="absolute z-10 w-full h-full"></span>
-        <ReactPlayerVideo url="B1J6Ou4q8vE" controls={false} loop={true}/>
+      <section className="w-10/12 m-auto">
+        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+              Understand User Flow.
+              <span className="sm:block"> Increase Conversion. </span>
+            </h1>
+
+            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              illo tenetur fuga ducimus numquam ea!
+            </p>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                href="#"
+              >
+                Get Started
+              </a>
+
+              <a
+                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                href="#"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative m-auto w-11/12 h-full overflow-hidden">
+        <div className="relative w-full h-[500px]">
+          <span className="absolute z-10 w-full h-full"></span>
+          <ReactPlayerVideo url="B1J6Ou4q8vE" controls={false} loop={true} />
+        </div>
       </section>
       {/* <section className="w-10/12 m-auto">
         <h2 className="text-base font-bold">Categorias</h2>
@@ -28,23 +61,23 @@ export default function Home() {
           </span>
         </div>
       </section> */}
-      {/* <section className="w-10/12 m-auto">
+      <section className="w-11/12 mt-24 m-auto">
         <h2 className="text-base font-bold">Cursos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {course.map((item) => (
-            <CardCourse
-              key={item.id}
-              id={item.id}
-              front={item.front}
-              title={item.title}
-              urltitle={item.urltitle}
-              description={item.description}
-              canal={item.canal}
-            />
+            <li>
+              <CardCourse
+                key={item.id}
+                id={item.id}
+                front={item.front}
+                title={item.title}
+                urltitle={item.urltitle}
+                description={item.description}
+                canal={item.canal}
+              />
+            </li>
           ))}
-        </div>
-      </section> */}
-      <section className="w-10/12 h-screen m-auto">
+        </ul>
       </section>
     </>
   );

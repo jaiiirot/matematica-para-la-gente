@@ -25,8 +25,8 @@ export default function ReactPlayerVideo({
       muted={muted}
       loop={loop}
       className="object-cover"
-      width={"100%"}
-      height={"441px"}
+      // width={"100%"}
+      // height={"441px"}
     />
   );
 }

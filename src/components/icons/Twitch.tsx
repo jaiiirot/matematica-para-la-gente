@@ -1,14 +1,14 @@
 interface Props {
-  height: string;
+  h: string;
 }
 
-export default function Twich({ height }: Props) {
+export default function Twich({ h }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       viewBox="0 0 2400 2800"
-      height={height}
+      height={h}
     >
       <path
         fill="#fff"
