@@ -1,6 +1,7 @@
 import { useParams, NavLink } from "react-router-dom";
 import { course } from "../mock/data.ts";
 import CardCreators from "../components/card/CardCreators.tsx";
+// import LogoNombre from "../components/icons/LogoNombre.tsx";
 // import CardVideosCourse from "../components/card/CardVideosCourse.tsx";
 export default function PresentationCourse() {
   const { urltitle } = useParams();

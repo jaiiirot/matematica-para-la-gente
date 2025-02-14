@@ -1,10 +1,11 @@
 // import GitHubStart from "../components/GitHubStart";
-import CardCourse from "../components/card/CardCourseCol.tsx";
+// import CardCourse from "../components/card/CardCourseCol.tsx";
+import CarouselCourse from "../components/carousel/CarouselCourse.tsx";
 import LogoNombre from "../components/icons/LogoNombre.tsx";
 import SearchCourse from "../components/submits/SearchCourse.tsx";
 // import ReactPlayerVideo from "../components/course/ReactPlayerVideo.tsx";
 // import Logo from "../components/icons/LogoComplete.tsx";
-import { course } from "../mock/data.ts";
+// import { course } from "../mock/data.ts";
 // import { TypeCardCourse} from "../types.js";
 
 export default function Home() {
@@ -24,21 +25,17 @@ export default function Home() {
         </div>
       </section>
       <SearchCourse />
-      <section className="w-11/12 mt-24 m-auto">
-        <h2 className="text-base font-bold">Cursos</h2>
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {course.map((item) => (
-            <CardCourse
-              key={item.id}
-              id={item.id}
-              front={item.front}
-              title={item.title}
-              urltitle={item.urltitle}
-              description={item.description}
-              canal={item.canal}
-            />
-          ))}
-        </ul>
+      <section className="w-11/12 my-6 m-auto">
+        <h2 className="mb-4 text-3xl font-bold">Analisis Matematico</h2>
+        <CarouselCourse />
+      </section>
+      <section className="w-11/12 my-6 m-auto">
+        <h2 className="mb-4 text-3xl font-bold">Algebra</h2>
+        <CarouselCourse />
+      </section>
+      <section className="w-11/12 my-6 m-auto">
+        <h2 className="mb-4 text-3xl font-bold">Quimica y Fisica</h2>
+        <CarouselCourse />
       </section>
     </>
   );

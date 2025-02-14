@@ -11,6 +11,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  /* position: relative; */
+  margin: 0 auto;
+  max-width: 2560px
+}
+
 #body {
   background: rgb(208, 167, 246);
   background: linear-gradient(

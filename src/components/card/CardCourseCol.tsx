@@ -24,19 +24,19 @@ export default function CardCourse({
       className="relative rounded-2xl overflow-hidden shadow-md border-gray-700 hover:shadow-lg hover:outline hover:outline-gray-200 hover:outline-1 bg-white h-max"
     >
       <img src={front} className="w-full object-cover" alt="" />
-      <div className="p-4 flex flex-col ">
+      <div className="p-4 flex flex-col gap-4">
         <div className="">
-          <h5 className="mb-2 text-xl font-bold">{title}</h5>
-          <p className="mb-3 text-sm font-normal line-clamp-2">{description}</p>
+          <h5 className="mb-2 font-bold">{title}</h5>
+          <p className="mb-3 text-xs font-normal line-clamp-2">{description}</p>
         </div>
-        <div className="flex flex-col justify-between gap-1 text-sm">
+        <div className="flex flex-col justify-between gap-1 text-xs">
           <div className="flex items-center gap-2">
             <img
               src={canal.avatar}
               alt={`avatar de ${canal.name}`}
               className="rounded-full size-8"
             />
-            <p>{canal.name}</p>
+            <p className="text-xs">{canal.name}</p>
           </div>
           <div className="flex items-center justify-between gap-1">
             <div className="flex items-center gap-4">

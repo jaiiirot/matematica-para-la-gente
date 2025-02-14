@@ -7,7 +7,7 @@ export default function LayoutCource() {
   // const querynumber: number =
   //   parseInt(new URLSearchParams(window.location.search).get("class")) - 1;
   console.log(urltitle);
-  const content = course[1];
+  const content = course[0];
   return (
     <>
       <section className="m-auto w-11/12 flex gap-4 items-center">

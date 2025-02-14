@@ -7,15 +7,15 @@ export default function SearchCourse() {
           placeholder="Buscar cursos"
           className="w-full p-2 border border-gray-300 rounded-md focus-visible:border-[#ff3131] focus-visible:ring-2 focus-visible:ring-[#ff3131] focus-visible:ring-opacity-50 outline-none"
         />
-        <select className="w-full p-2 border border-gray-300 rounded-md">
-          <option value="Todos">Todos los cursos</option>
+        <select className="w-full p-2 border border-gray-300 rounded-md focus-visible:border-[#ff3131] focus-visible:ring-2 focus-visible:ring-[#ff3131] focus-visible:ring-opacity-50 outline-none">
+          <option value="todos">Todos los cursos</option>
           <option value="matematica">Matematica</option>
           <option value="algebra">Algebra</option>
           <option value="fisica">Fisica</option>
           <option value="quimica">Quimica</option>
         </select>
-        <select className="w-full p-2 border border-gray-300 rounded-md">
-          <option value="Todos">Todos los profes</option>
+        <select className="w-full p-2 border border-gray-300 rounded-md focus-visible:border-[#ff3131] focus-visible:ring-2 focus-visible:ring-[#ff3131] focus-visible:ring-opacity-50 outline-none">
+          <option value="todos">Todos los profes</option>
           <option value="algebra_para_todos">Algebra para todos</option>
           <option value="el_traductor_de_ingenieria">El traductor de ingenieria</option>
           <option value="el_profe_alex">El profe alex</option>
