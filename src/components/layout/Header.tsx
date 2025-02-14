@@ -1,32 +1,26 @@
-// import InfoUser from "./InfoUser";
 import { Link } from "react-router-dom";
-import Test from "../icons/Test";
-import Logo from "../icons/Logo";
-import Teach from "../icons/Teach";
 import { useEffect } from "react";
+import Test from "../icons/Test";
+import Teach from "../icons/Teach";
 import Video from "../icons/Video";
 import LinkHeader from "./LinkHeader";
-import Book from "../icons/Book";
-// import Twich from "../icons/Twitch";
+import LogoIcon from "../icons/LogoIcon";
 export default function Header() {
   useEffect(() => {}, []);
   return (
-    <header className="flex fixed top-0 w-full z-50 pt-2 backdrop-blur-xl">
-      <nav className="flex justify-between items-center gap-2 w-11/12 py-4 mx-auto px-4 rounded-xl shadow-2xl  bg-white backdrop-blur-lg">
+    <header className="flex top-0 w-full z-50 pt-2">
+      <nav className="flex justify-between items-center gap-2 w-11/12 py-4 mx-auto px-4 rounded-xl">
         <Link to="/" className="hover:scale-105 transition drop-shadow-2xl">
-          <Logo color="#0c2337" height="56" />
+          <LogoIcon size="size-12" cc="#ff3131" cg="#0c2337" />
         </Link>
-        <ul className="flex gap-4 text-lg">
+        <ul className="flex gap-4 text-lg text-black">
           <LinkHeader title="Cursos" available={true}>
             <Video w="24" h="24" />
           </LinkHeader>
-          <LinkHeader title="Parciales" available={false}>
+          <LinkHeader title="Resumenes" available={false}>
             <Test w="24" h="24" />
           </LinkHeader>
-          <LinkHeader title="Materias" available={false}>
-            <Book w="24" h="24" />
-          </LinkHeader>
-          <LinkHeader title="Creadores" available={true}>
+          <LinkHeader title="Clases" available={false}>
             <Teach w="24" h="24" />
           </LinkHeader>
           {/* <li className="rounded-md hover:scale-105 transition shadow-sm hover:shadow-lg">

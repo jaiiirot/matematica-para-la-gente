@@ -21,7 +21,7 @@ export default function CardCourse({
   return (
     <Link
       to={`/cursos/${urltitle}?class=${id}`}
-      className="relative rounded-2xl overflow-hidden shadow-md border-gray-700 hover:shadow-lg hover:outline hover:outline-gray-200 hover:outline-1 h-full"
+      className="relative rounded-2xl overflow-hidden shadow-md border-gray-700 hover:shadow-lg hover:outline hover:outline-gray-200 hover:outline-1 bg-white h-max"
     >
       <img src={front} className="w-full object-cover" alt="" />
       <div className="p-4 flex flex-col ">

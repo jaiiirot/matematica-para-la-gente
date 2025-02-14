@@ -1,6 +1,6 @@
 export default function ActionCoffee() {
   return (
-    <div className="fixed bottom-0 right-0 z-50 w-[360px]">
+    <div className="fixed bottom-5 right-5 z-50 w-[360px]">
       <div
         className="rounded-2xl border border-blue-100 bg-white p-4 shadow-lg sm:p-6 lg:p-8"
         role="alert"

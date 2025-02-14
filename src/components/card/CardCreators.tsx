@@ -1,15 +1,16 @@
 import { creators } from "../../mock/creators";
 
 export default function CardCreators({ id }: { id: string }) {
-  const creator = creators.find((creator) => creator.id === id);
-  if (!creator) {
-    return <div>Creator not found</div>;
-  }
+  // const creator = creators.find((creator) => creator.id === id);
+  // if (!creator) {
+  //   return <div>Creator not found</div>;
+  // }
+  const creator = creators[0];
   const { name, description, avatar, history, achievements, contributions } =
     creator;
 
   return (
-    <div>
+    <>
       <div className="text-center">
         <img
           src={avatar}
@@ -19,7 +20,7 @@ export default function CardCreators({ id }: { id: string }) {
         <h1 className="text-2xl font-bold text-gray-800">{name}</h1>
         <p className="text-sm text-gray-500">{description}</p>
       </div>
-      <div className="grid grid-cols-3  gap-4 mt-4">
+      <div className="flex flex-col gap-4 mt-4">
         <div className="mt-4">
           <h2 className="text-lg font-semibold text-gray-800">Historia</h2>
           <p className="text-gray-700 mt-2">{history}</p>
@@ -40,7 +41,9 @@ export default function CardCreators({ id }: { id: string }) {
         </div>
       </div>
       <div>
-        <h2 className="text-lg font-semibold text-gray-800 mt-4">Redes Sociales</h2>
+        <h2 className="text-lg font-semibold text-gray-800 mt-4">
+          Redes Sociales
+        </h2>
         <div className="flex gap-4 mt-2">
           <a href="#" target="_blank" rel="noreferrer">
             <img
@@ -92,6 +95,6 @@ export default function CardCreators({ id }: { id: string }) {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 }

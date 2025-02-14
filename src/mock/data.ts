@@ -163,7 +163,7 @@ export const course: Course[] = [
   {
     id: 3,
     front:
-      "https://i.ytimg.com/vi/dOmSiVcCUm8/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBC6IIwTfyFOAzwdtSPWrotI1MpFg",
+      "https://i.ytimg.com/vi/SyU3aCw5Wy8/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC2wAZmYp7Su-Btasf9RhQkq6zgng",
     title: "Potencias | Álgebra Para Todos",
     urltitle: "potencias",
     description: "Propiedades, ecuaciones, ejercicios resueltos.",

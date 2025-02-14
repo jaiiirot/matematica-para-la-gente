@@ -10,3 +10,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+#body {
+  background: rgb(208, 167, 246);
+  background: linear-gradient(
+    180deg,
+    rgb(246 167 167) 0%,
+    rgba(255, 255, 255, 1) 33%
+  );
+}

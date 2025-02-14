@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import ReactPlayerVideo from "../components/course/ReactPlayerVideo";
 // import CardVideosCourse from "../components/card/CardVideosCourse";
 // import { course } from "../mock/data";
+// import { course } from "../mock/data";
 
 export default function ContentCource() {
   const { url } = useParams();
@@ -20,7 +21,7 @@ export default function ContentCource() {
           </div>
         </div>
         <div className="w-min flex flex-col gap-2">
-          {/* <CardVideosCourse data={course[0]} urltitle={urltitle || ""} /> */}
+          {/* <CardVideosCourse data={course[0]}  /> */}
         </div>
       </section>
     </>
