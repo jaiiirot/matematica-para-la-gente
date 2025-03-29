@@ -1,13 +1,11 @@
 import { useParams, NavLink } from "react-router-dom";
 import { course } from "../mock/data.ts";
 import CardCreators from "../components/card/CardCreators.tsx";
-// import LogoNombre from "../components/icons/LogoNombre.tsx";
-// import CardVideosCourse from "../components/card/CardVideosCourse.tsx";
+import { useCourseStore } from "../store/courses.ts";
+
 export default function PresentationCourse() {
   const { urltitle } = useParams();
-  // const querynumber: number =
-  //   parseInt(new URLSearchParams(window.location.search).get("class")) - 1;
-  console.log(urltitle);
+  const fetchCourse = useCourseStore(state => state.fetchCourse)
   const content = course[2];
   return (
     <>
@@ -61,6 +59,7 @@ export default function PresentationCourse() {
           </span>
           <CardCreators id={content.canal.id} />
         </article>
+        <button>state</button>
       </section>
     </>
   );

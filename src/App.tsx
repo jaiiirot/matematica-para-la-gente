@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-// import PrivateGuard from "./guard/PrivateGuard";
-// import LayoutCource from "./Layout/LayoutCource";
 import Layout from "./Layout/Layout";
 import ContentCource from "./pages/ContentCource";
 import PresentationCourse from "./pages/PresentationCourse";
 import Course from "./pages/Course";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+// import PrivateGuard from "./guard/PrivateGuard";
+// import LayoutCource from "./Layout/LayoutCource";
 // import Matter from "./pages/Matter";
 // import Influencers from "./pages/Influencers";
 

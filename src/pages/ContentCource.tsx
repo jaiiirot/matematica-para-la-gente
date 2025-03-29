@@ -1,8 +1,5 @@
 import { useParams } from "react-router-dom";
 import ReactPlayerVideo from "../components/course/ReactPlayerVideo";
-// import CardVideosCourse from "../components/card/CardVideosCourse";
-// import { course } from "../mock/data";
-// import { course } from "../mock/data";
 
 export default function ContentCource() {
   const { url } = useParams();

@@ -1,12 +1,6 @@
-// import GitHubStart from "../components/GitHubStart";
-// import CardCourse from "../components/card/CardCourseCol.tsx";
 import CarouselCourse from "../components/carousel/CarouselCourse.tsx";
 import LogoNombre from "../components/icons/LogoNombre.tsx";
 import SearchCourse from "../components/submits/SearchCourse.tsx";
-// import ReactPlayerVideo from "../components/course/ReactPlayerVideo.tsx";
-// import Logo from "../components/icons/LogoComplete.tsx";
-// import { course } from "../mock/data.ts";
-// import { TypeCardCourse} from "../types.js";
 
 export default function Home() {
   return (
